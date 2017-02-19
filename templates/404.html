@@ -1,1 +1,42 @@
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p style="margin-top: 6px;">
+                <div class="logged-in" style="display: none;">
+                    <p>
+                        <img id="gravatar" src="" style="float: left; width: 64px; height: 64px; border: 1px solid #ccc; margin-right: 10px;" />
+                        <span id="name" style="font-weight: bold;">
+						</span>
+                    </p>
+                    <ul style="list-style: none;">
+                        <li>
+                            Hover over rows and click on the +/- symbols to change your favorites(yellow)
+                        </li>
+                    </ul>
+                </div>
+                <h3>
+				Sorry, this page isn't available.
+				        </h3>
+                <div class="errorContent">
+                  <p>The link you followed may be broken, or the page may have been removed.<br>If you believe this was an error, <a href="https://twitter.com/cdnjs" target="_blank">let us know</a>. In the meantime, try browsing through our menu up top or refreshing. </p>
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
+<script async="">
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
